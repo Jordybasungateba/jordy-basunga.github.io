@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Architecte Logiciel & Ingénieur</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- === NAVBAR MOBILE (visible uniquement < lg) === -->
+    <nav class="navbar mobile-navbar d-lg-none sticky-top px-3 py-2">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <span class="logo-dot"></span> JORDY BASUNGA
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
+            aria-controls="mobileNav" aria-expanded="false" aria-label="Ouvrir le menu">
+            <span class="navbar-toggler-text">MENU</span>
+            <i class="bi bi-list fs-5"></i>
+        </button>
+        <div class="collapse navbar-collapse mt-2" id="mobileNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Projets</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/jordy-basunga-4a4357359/"
+                        target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- === CONTENU PRINCIPAL === -->
+    <div class="container-fluid h-100 main-content px-5">
+        <div class="row h-100">
+
+            <!-- COLONNE GAUCHE : Texte + CTA -->
+            <div
+                class="col-lg-4 d-flex flex-column justify-content-between py-4 py-lg-5 ps-lg-5 push-center-left col-left-content">
+                <!-- Logo desktop -->
+                <div class="d-none d-lg-flex align-items-center font-sans logo mt-3">
+                    <span class="logo-dot"></span> JORDY BASUNGA
+                </div>
+
+                <div class="mt-auto mb-auto z-3 position-relative">
+                    <p class="font-serif greeting">Salut. Je suis Jordy Basunga Teba,</p>
+                    <h1 class="font-sans hero-title-sans">SOFTWARE</h1>
+                    <h1 class="font-serif hero-title-serif">Engineer &</h1>
+                    <h1 class="font-sans hero-title-sans">ARCHITECT</h1>
+
+                    <p class="font-serif description">
+                        Conception de backends robustes et d'expériences mobiles fluides — une architecture logicielle
+                        scalable qui performe et livre des résultats.
+                    </p>
+                </div>
+
+                <div class="mb-3 btn-contact-wrapper">
+                    <a href="https://www.linkedin.com/in/jordy-basunga-4a4357359/" target="_blank"
+                        rel="noopener noreferrer" class="btn-custom btn-contact font-sans">
+                        Me Contacter
+                        <span class="icon-circle"><i class="bi bi-arrow-right-short"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- COLONNE CENTRE : Arche + Photo -->
+            <div class="col-lg-4 p-0">
+                <div class="arch-wrapper">
+                    <img src="assets/jordy_basunga_teba.jpeg" alt="Portrait Jordy Basunga Teba">
+                </div>
+            </div>
+
+            <!-- COLONNE DROITE : Menu + Stats -->
+            <div
+                class="col-lg-4 d-flex flex-column justify-content-between align-items-end py-4 py-lg-5 text-end pe-lg-5 push-center-right col-right-content">
+                <!-- Bouton Menu Desktop uniquement avec menu déroulant -->
+                <div class="mt-3 d-none d-lg-block dropdown desktop-menu-dropdown position-relative">
+                    <a href="#" class="btn-custom btn-menu font-sans text-decoration-none">
+                        MENU <i class="bi bi-list fs-5 ms-1"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
+                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#">Accueil</a></li>
+                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#">À propos</a></li>
+                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#">Projets</a></li>
+                        <li><a class="dropdown-item font-sans text-uppercase py-2"
+                                href="https://www.linkedin.com/in/jordy-basunga-4a4357359/" target="_blank"
+                                rel="noopener noreferrer">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="mt-auto mb-auto stats-grid">
+                    <div class="stat-item">
+                        <p class="font-sans stat-number">4+</p>
+                        <p class="font-serif stat-label">Ans d'Expérience</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <p class="font-sans stat-number">10+</p>
+                        <p class="font-serif stat-label">Projets Réalisés</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <p class="font-sans stat-number">5</p>
+                        <p class="font-serif stat-label">Certifications Internationales</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <p class="font-sans stat-number">1</p>
+                        <p class="font-serif stat-label">Poste Tech Lead</p>
+                    </div>
+                </div>
+
+                <div class="mb-3 d-none d-lg-block">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- === SECTION SKILLS === -->
+    <div class="container-fluid px-5 skills-section">
+        <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
+
+            <div class="d-flex justify-content-between align-items-center skills-header reveal fade-up">
+                <div>
+                    <h2 class="font-sans skills-title fw-bold text-uppercase mb-0">Skills</h2>
+                    <p class="font-serif skills-subtitle mb-0 mt-1">Technologies et outils que je maîtrise au quotidien.
+                    </p>
+                </div>
+                <div class="d-flex gap-2 skills-nav-arrows">
+                    <button class="arrow-btn" id="scrollLeft" aria-label="Défiler à gauche">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <button class="arrow-btn" id="scrollRight" aria-label="Défiler à droite">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="logo-grid-wrapper">
+                <div class="logo-grid" id="skillsGrid">
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/file-icons--flutter.svg" alt="Flutter" class="skill-svg"> Flutter
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon--dart-wordmark.svg" alt="Dart" class="skill-svg"> Dart
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--python.svg" alt="Python" class="skill-svg"> Python
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--django-wordmark.svg" alt="Django" class="skill-svg">
+                        Django
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/logos--fastapi-icon.svg" alt="FastAPI" class="skill-svg">
+                        FastAPI
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/streamline-ultimate--coding-apps-website-web-dev-api-cloud.svg"
+                            alt="REST API" class="skill-svg"> REST API
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--docker-wordmark.svg" alt="Docker" class="skill-svg">
+                        Docker
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--kubernetes-wordmark.svg" alt="Kubernetes"
+                            class="skill-svg"> Kubernetes
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--postgresql-wordmark.svg" alt="PostgreSQL"
+                            class="skill-svg"> PostgreSQL
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--redis-wordmark.svg" alt="Redis" class="skill-svg">
+                        Redis
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/simple-icons--rabbitmq.svg" alt="RabbitMQ" class="skill-svg">
+                        RabbitMQ
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--git-wordmark.svg" alt="Git" class="skill-svg"> Git
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon--github-wordmark.svg" alt="GitHub" class="skill-svg"> GitHub
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/cib--react.svg" alt="React" class="skill-svg"> React
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon--socketio-wordmark.svg" alt="Socket.io" class="skill-svg">
+                        Socket.io
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--jwt-wordmark.svg" alt="JWT" class="skill-svg"> JWT
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/fa7-brands--aws.svg" alt="AWS" class="skill-svg"> AWS
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/simple-icons--keycloak.svg" alt="Keycloak" class="skill-svg">
+                        Keycloak
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--postman-wordmark.svg" alt="Postman"
+                            class="skill-svg"> Postman
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--androidstudio-wordmark.svg" alt="Android Studio"
+                            class="skill-svg"> Android Studio
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/simple-icons--xcode.svg" alt="Xcode" class="skill-svg"> Xcode
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/f7--logo-android-text.svg" alt="Android" class="skill-svg"> Android
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/streamline-logos--apple-ios-logo-3.svg" alt="iOS" class="skill-svg">
+                        iOS
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/simple-icons--linux.svg" alt="Linux" class="skill-svg"> Linux
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/devicon-plain--ubuntu-wordmark.svg" alt="Ubuntu" class="skill-svg">
+                        Ubuntu
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/bxl--google-antigravity.svg" alt="Antigravity" class="skill-svg">
+                        Antigravity
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/simple-icons--windsurf.svg" alt="Windsurf" class="skill-svg">
+                        Windsurf
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/logos--mongodb-icon.svg" alt="MongoDB" class="skill-svg">
+                        MongoDB
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/skills_SVG/logos--firebase-icon.svg" alt="Firebase" class="skill-svg">
+                        Firebase
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- === SECTION ABOUT === -->
+    <section class="container-fluid px-5 about-section">
+        <div class="row gx-lg-5 ps-lg-5 push-center-left pe-lg-5 push-center-right">
+            <div class="col-lg-5 mb-4 mb-lg-0 reveal fade-left">
+                <h2 class="font-sans about-title">
+                    Penser, concevoir et optimiser des systèmes informatiques
+                </h2>
+            </div>
+
+            <div class="col-lg-7 reveal fade-right delay-2">
+                <p class="font-serif about-intro">
+                    Ingénieur logiciel passionné, spécialisé dans le développement mobile et backend (serveurs
+                    d'application, API, bases de données), je conçois et développe des solutions robustes répondant aux
+                    besoins métiers des entreprises. Mon expertise couvre à la fois les aspects techniques et
+                    fonctionnels des systèmes informatiques, avec une forte orientation vers la conception
+                    d'architectures logicielles adaptées telles que les architectures microservices, monolithiques ou
+                    orientées services (SOA).
+                </p>
+
+                <p class="font-serif about-text">
+                    Face à l'évolution constante des systèmes d'information, le rôle du développeur ne se limite plus
+                    uniquement à la programmation. Il implique aujourd'hui une réflexion approfondie sur l'architecture
+                    des systèmes, qu'il s'agisse d'un simple site web ou d'une plateforme complexe à grande échelle. Au
+                    cours de ces trois dernières années, je me suis particulièrement concentré sur la conception et
+                    l'optimisation d'architectures informatiques capables de garantir une haute disponibilité, une
+                    sécurité renforcée et une maintenance continue avec un minimum d'interruptions.<br><br>
+                    Dans cette optique, j'intègre des pratiques et outils DevOps afin d'automatiser les déploiements,
+                    améliorer la scalabilité des systèmes et assurer une meilleure résilience face aux charges et aux
+                    incidents. Mon objectif est de construire des systèmes performants, évolutifs et durables, tout en
+                    facilitant leur exploitation et leur évolution dans le temps.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- === SECTION NEWS & BLOGS === -->
+    <section class="container-fluid px-5 news-section">
+        <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
+
+            <div class="d-flex justify-content-between align-items-end mb-5 news-header-wrap reveal fade-up">
+                <div>
+                    <span class="font-sans news-overline">&mdash; Mes Travaux & Recherches</span>
+                    <h2 class="font-sans about-title">Mes Derniers <br> Travaux & Recherches</h2>
+                    <p class="font-serif news-description mt-3">Au fil de mes années de développement, j'ai exploré et
+                        testé de nouvelles technologies, évalué des solutions et expérimenté différentes approches.
+                        Cette section rassemble mes travaux de recherche, mes analyses et mes recommandations, afin de
+                        partager des insights pratiques et des retours d'expérience issus de projets réels.</p>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                    <div class="d-flex gap-2 skills-nav-arrows">
+                        <button class="arrow-btn" id="blogScrollLeft" aria-label="Défiler à gauche">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                        <button class="arrow-btn" id="blogScrollRight" aria-label="Défiler à droite">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-grid-wrapper">
+                <div class="blog-grid" id="blogGrid">
+
+                    <article class="blog-card active">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/micro_service.webp"
+                                alt="Serveurs informatiques et architecture microservices">
+                            <div class="hover-icon"><i class="bi bi-arrow-up-right"></i></div>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">Architecture Système</span>
+                            <span class="blog-badge">12 Fév 2024</span>
+                        </div>
+                        <h3 class="font-sans blog-title">Conception d'une Architecture Microservices Résiliente</h3>
+                        <p class="font-sans blog-excerpt">Analyse des stratégies pour décomposer un monolithe robuste,
+                            gérer la communication asynchrone via RabbitMQ et assurer la haute disponibilité avec
+                            Kubernetes.</p>
+                        <a href="#" class="font-sans blog-link">Lire Plus</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/django_postgre.png" alt="Code informatique, optimisation backend">
+                            <div class="hover-icon"><i class="bi bi-arrow-up-right"></i></div>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">Performance Backend</span>
+                            <span class="blog-badge">28 Nov 2023</span>
+                        </div>
+                        <h3 class="font-sans blog-title">Optimisation des Performances sous Django &amp; PostgreSQL</h3>
+                        <p class="font-sans blog-excerpt">Étude de cas sur l'amélioration des temps de réponse d'une API
+                            de 400% grâce à l'implémentation de Redis et l'optimisation avancée des requêtes SQL.</p>
+                        <a href="#" class="font-sans blog-link">Lire Plus</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/micro_service.webp" alt="Architecture Microservices">
+                            <div class="hover-icon"><i class="bi bi-arrow-up-right"></i></div>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">Architecture Logicielle</span>
+                            <span class="blog-badge">05 Sep 2024</span>
+                        </div>
+                        <h3 class="font-sans blog-title">Avons-nous vraiment besoin des architectures Microservices ?
+                        </h3>
+                        <p class="font-sans blog-excerpt">Analyse critique des architectures dites "microservices" :
+                            sont-elles toujours adaptées au démarrage d’un projet, ou risquent-elles de complexifier
+                            inutilement le système ? Entre simplicité du monolithe et promesses de scalabilité, où se
+                            situe le bon choix ?</p>
+                        <a href="#" class="font-sans blog-link">Lire Plus</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/openId.jpg" alt="Sécurité des APIs et authentification">
+                            <div class="hover-icon"><i class="bi bi-arrow-up-right"></i></div>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">Sécurité API</span>
+                            <span class="blog-badge">18 Juil 2023</span>
+                        </div>
+                        <h3 class="font-sans blog-title">Sécurisation des Applications : JWT, OAuth2 &amp; Keycloak</h3>
+                        <p class="font-sans blog-excerpt">Dans la conception des systèmes backend, la gestion de la
+                            sécurité est un enjeu critique. Faut-il construire ses propres mécanismes d’authentification
+                            et d’autorisation, ou s’appuyer sur des standards et solutions existantes ? Cette réflexion
+                            met en lumière les enjeux de fiabilité, de maintenance et de scalabilité.
+                        </p>
+                        <a href="#" class="font-sans blog-link">Lire Plus</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop"
+                                alt="Application mobile Flutter">
+                            <div class="hover-icon"><i class="bi bi-arrow-up-right"></i></div>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">Mobile Flutter</span>
+                            <span class="blog-badge">02 Mai 2023</span>
+                        </div>
+                        <h3 class="font-sans blog-title">Gestion d'État en Flutter : GetX & Conclusion</h3>
+                        <p class="font-sans blog-excerpt">Analyse de la gestion d'état avec GetX pour construire des
+                            applications Flutter performantes, simples à maintenir et testables à grande échelle.</p>
+                        <a href="#" class="font-sans blog-link">Lire Plus</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/images/saga_patern.png" alt="Cohérence des données distribuées">
+                            <div class="hover-icon"><i class="bi bi-arrow-up-right"></i></div>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">Architecture Web</span>
+                            <span class="blog-badge">14 Mar 2023</span>
+                        </div>
+                        <h3 class="font-sans blog-title">Cohérence des données dans une architecture distribuée : Saga
+                            ou Event Driven</h3>
+                        <p class="font-sans blog-excerpt">Exploration des approches pour garantir la consistance des
+                            données entre microservices : forces et limites des patterns Saga et architectures orientées
+                            événements.</p>
+                        <a href="#" class="font-sans blog-link">Lire Plus</a>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- === SECTION CERTIFICATION === -->
+    <section class="container-fluid px-5 certification-section">
+        <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
+            <div class="cert-card reveal fade-in">
+
+                <div class="cert-header d-flex align-items-center">
+
+                    <div class="cert-icon-wrapper">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 15.5l-2.5 7.5 4.5-2.5 3.5 3.5 1-8.5z" />
+                            <path d="M18.5 15.5l2.5 7.5-4.5-2.5-3.5 3.5-1-8.5z" />
+                            <path
+                                d="M12 2C10.5 2 9.5 1 8 1.5c-1.5.5-2.5 2-3.5 3C3.5 5.5 2 6.5 1.5 8c-.5 1.5.5 2.5.5 4s-1 2.5-.5 4c.5 1.5 2 2.5 3 3.5 1 1 2 2.5 3.5 3 .1.1.2.1.3.1.4 0 .9-.1 1.2-.3 1.5-.5 2.5-2 4-2s2.5 1.5 4 2c.3.2.8.3 1.2.3.1 0 .2 0 .3-.1 1.5-.5 2.5-2 3.5-3 1-1 2.5-2 3-3.5-.5-1.5.5-2.5.5-4s-1-2.5-.5-4c.5-1.5-1-2.5-2-3.5-1-1-2-2.5-3.5-3C14.5 2 13.5 2 12 2z" />
+                            <path d="M10.5 15l-3.5-3.5 1.5-1.5 2 2 5-5 1.5 1.5-6.5 6.5z" fill="#0a0a0a" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h2 class="font-sans cert-main-title">Certification</h2>
+                        <p class="font-serif cert-header-text">
+                            Au cours de mon parcours professionnel, j'ai obtenu plusieurs certifications qui attestent
+                            de mes compétences techniques et de ma capacité à concevoir, développer et déployer des
+                            solutions logicielles robustes et performantes dans des environnements exigeants.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="cert-body">
+                    <div class="d-flex justify-content-end gap-2 mb-3">
+                        <button class="arrow-btn arrow-btn-light" id="certScrollLeft" aria-label="Défiler à gauche">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                        <button class="arrow-btn arrow-btn-light" id="certScrollRight" aria-label="Défiler à droite">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="cert-grid" id="certGrid">
+
+                        <div class="cert-item">
+                            <h3 class="font-sans cert-item-title">Développeur Python</h3>
+                            <div class="font-sans cert-item-subtitle">Certification Professionnelle</div>
+                            <p class="font-serif cert-item-text">
+                                Maîtrise approfondie du langage Python, de ses paradigmes de programmation orientée
+                                objet et fonctionnelle, ainsi que des bonnes pratiques de développement pour la création
+                                d'applications performantes et maintenables.
+                            </p>
+                            <a href="#" class="font-sans cert-view-link">Voir la certification <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+
+                        <div class="cert-item">
+                            <h3 class="font-sans cert-item-title">Masterclass Python</h3>
+                            <div class="font-sans cert-item-subtitle">Algorithmes & Traitement des Données</div>
+                            <p class="font-serif cert-item-text">
+                                Formation avancée couvrant les structures de données, les algorithmes de tri et de
+                                recherche, ainsi que le traitement et l'analyse de données à l'aide de bibliothèques
+                                spécialisées comme Pandas et NumPy.
+                            </p>
+                            <a href="#" class="font-sans cert-view-link">Voir la certification <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+
+                        <div class="cert-item">
+                            <h3 class="font-sans cert-item-title">Développeur Django</h3>
+                            <div class="font-sans cert-item-subtitle">Framework Web Python</div>
+                            <p class="font-serif cert-item-text">
+                                Expertise dans la conception et le développement d'applications web robustes avec
+                                Django, incluant la gestion des modèles, les vues basées sur les classes,
+                                l'authentification, les API REST et le déploiement en production.
+                            </p>
+                            <a href="#" class="font-sans cert-view-link">Voir la certification <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+
+                        <div class="cert-item">
+                            <h3 class="font-sans cert-item-title">Master Django</h3>
+                            <div class="font-sans cert-item-subtitle">Architecture Avancée & Performance</div>
+                            <p class="font-serif cert-item-text">
+                                Formation de niveau supérieur axée sur l'optimisation des requêtes ORM, la mise en cache
+                                avec Redis, la gestion des tâches asynchrones avec Celery et l'architecture de
+                                microservices autour du framework Django.
+                            </p>
+                            <a href="#" class="font-sans cert-view-link">Voir la certification <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+
+                        <div class="cert-item">
+                            <h3 class="font-sans cert-item-title">Développeur Mobile & Web</h3>
+                            <div class="font-sans cert-item-subtitle">Flutter — Android, iOS & Web</div>
+                            <p class="font-serif cert-item-text">
+                                Développement d'applications multiplateformes performantes avec Flutter et Dart,
+                                couvrant Android, iOS et le Web. Maîtrise de GetX, Provider, de la gestion d'état
+                                avancée, et du déploiement sur les stores et environnements web.
+                            </p>
+                            <a href="#" class="font-sans cert-view-link">Voir la certification <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- === SECTION PORTFOLIO === -->
+    <section class="container-fluid px-5 portfolio-section">
+        <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
+
+            <div class="d-flex justify-content-between align-items-end mb-5 news-header-wrap reveal fade-up">
+                <div>
+                    <span class="font-sans news-overline">&mdash; Portfolio</span>
+                    <h2 class="font-sans about-title">Portfolio</h2>
+                    <p class="font-serif news-description mt-3">Voici une sélection de projets sur lesquels j'ai
+                        travaillé, allant d'applications mobiles complètes à des systèmes backend complexes. Chaque
+                        projet reflète mon engagement envers la qualité, la performance et une architecture logicielle
+                        pensée pour durer.</p>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                    <div class="d-flex gap-2 skills-nav-arrows">
+                        <button class="arrow-btn" id="portfolioScrollLeft" aria-label="Défiler à gauche">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                        <button class="arrow-btn" id="portfolioScrollRight" aria-label="Défiler à droite">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-grid-wrapper">
+                <div class="blog-grid" id="portfolioGrid">
+
+                    <article class="blog-card portfolio-card active">
+                        <div class="blog-img-wrapper portfolio-img">
+                            <img src="assets/Prisme/2.png" alt="Site web PRISME RDC">
+                            <a href="https://prismerdc.com" target="_blank" rel="noopener noreferrer"
+                                class="hover-icon"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">React Js</span>
+                            <span class="blog-badge">Firebase</span>
+                            <span class="blog-badge">Hostinger</span>
+                        </div>
+                        <h3 class="font-sans blog-title">Conception & Développement du Site PRISME RDC</h3>
+                        <p class="font-sans blog-excerpt">Plateforme web scientifique pour le programme PRISME RDC,
+                            dédié à la formation et l'accompagnement des chercheurs, médecins biologistes et
+                            laboratoires en République Démocratique du Congo.</p>
+                        <a href="https://prismerdc.com" target="_blank" rel="noopener noreferrer"
+                            class="font-sans blog-link">Voir le Projet</a>
+                    </article>
+
+                    <article class="blog-card portfolio-card">
+                        <div class="blog-img-wrapper portfolio-img">
+                            <img src="assets/lamp/1.png" alt="Application Lamp Edification">
+                            <a href="#" class="hover-icon"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">Mobile App</span>
+                            <span class="blog-badge">Flutter</span>
+                            <span class="blog-badge">Node js</span>
+                            <span class="blog-badge">API REST</span>
+                        </div>
+                        <h3 class="font-sans blog-title">Application Mobile Lamp Edification</h3>
+                        <p class="font-sans blog-excerpt">Développement d'une application mobile multiplateforme dédiée
+                            à l'édification spirituelle, offrant une expérience utilisateur fluide et un parcours
+                            inspirant au quotidien.</p>
+                        <a href="#" class="font-sans blog-link">Voir le Projet</a>
+                    </article>
+
+                    <article class="blog-card portfolio-card">
+                        <div class="blog-img-wrapper portfolio-img">
+                            <img src="assets/modelisation/architecture 01.png"
+                                alt="Architecture système de gestion des présences">
+                            <a href="#" class="hover-icon"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">SI PostgreSQL</span>
+                            <span class="blog-badge">Software Docker</span>
+                            <span class="blog-badge"> Python Redis</span>
+                            <span class="blog-badge">Flutter API</span>
+                            <span class="blog-badge"> Ubuntu</span>
+                        </div>
+                        <h3 class="font-sans blog-title">Système de Gestion Numérique des Présences</h3>
+                        <p class="font-sans blog-excerpt">Conception et développement d'une solution numérique innovante
+                            pour le suivi et la gestion automatisée des présences dans une école supérieure.</p>
+                        <a href="#" class="font-sans blog-link">Voir le Projet</a>
+                    </article>
+
+                    <article class="blog-card portfolio-card">
+                        <div class="blog-img-wrapper portfolio-img">
+                            <img src="assets/city_paris/2.jpeg" alt="Application Mobile City Paris">
+                            <a href="https://www.city-paris.fr/" target="_blank" rel="noopener noreferrer"
+                                class="hover-icon"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">Flutter</span>
+                            <span class="blog-badge">Webview</span>
+                            <span class="blog-badge">Wordpress</span>
+                        </div>
+                        <h3 class="font-sans blog-title">City Paris - App de Tourisme Interactive</h3>
+                        <p class="font-sans blog-excerpt">Développement d'une application mobile pour une agence de
+                            tourisme basée à Paris, facilitant les visites guidées grâce à une carte interactive
+                            regroupant tous les lieux d'intérêt.</p>
+                        <a href="https://www.city-paris.fr/" target="_blank" rel="noopener noreferrer"
+                            class="font-sans blog-link">Voir le Projet</a>
+                    </article>
+
+                    <article class="blog-card portfolio-card">
+                        <div class="blog-img-wrapper portfolio-img">
+                            <img src="assets/loyer/1.jpeg" alt="Plateforme Loyer">
+                            <a href="#" class="hover-icon"><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-badges font-sans">
+                            <span class="blog-badge">Flutter</span>
+                            <span class="blog-badge">Python</span>
+                            <span class="blog-badge">PostgreSQL</span>
+                            <span class="blog-badge">Redis</span>
+                            <span class="blog-badge">API</span>
+
+
+
+                        </div>
+                        <h3 class="font-sans blog-title">Loyer - Mise en Relation Immobilière</h3>
+                        <p class="font-sans blog-excerpt">Plateforme innovante de mise en relation entre propriétaires
+                            et locataires, conçue pour réduire les barrières entre les deux parties tout en garantissant
+                            un processus fluide et sécurisé.</p>
+                        <a href="#" class="font-sans blog-link">Voir le Projet</a>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- === SECTION AMAZING (Appel à l'action) === -->
+    <section class="container-fluid px-5 amazing-section">
+        <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
+            <div class="row g-5 align-items-center">
+
+                <!-- Colonne gauche : Arche inversée avec photo -->
+                <div class="col-lg-4 p-0 reveal fade-left">
+                    <div class="arch-wrapper-flipped">
+                        <img src="assets/jordy2.png" alt="Portrait Jordy Basunga Teba">
+                    </div>
+                </div>
+
+                <!-- Colonne droite : Titre + Texte + CTA -->
+                <div class="col-lg-6 offset-lg-1 d-flex flex-column align-items-start reveal fade-right delay-2">
+                    <h2 class="font-sans amazing-title" id="typewriterTitle">
+                        <span class="typewriter-line" data-text="CRÉONS"></span><br>
+                        <span class="typewriter-line" data-text="QUELQUE CHOSE"></span><br>
+                        <span class="typewriter-line" data-text="D'INCROYABLE..."></span>
+                    </h2>
+                    <p class="font-serif project-text mt-4">
+                        Un projet en tête, une envie de collaborer ou juste pour échanger ? N'hésitez pas à me contacter
+                        à tout moment !
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://www.linkedin.com/in/jordy-basunga-4a4357359/" target="_blank"
+                            rel="noopener noreferrer" class="btn-amazing-start font-sans">
+                            Lancer Un Projet
+                            <span class="icon-circle"><i class="bi bi-arrow-up-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="mt-4 social-links-wrap">
+                        <a href="https://www.linkedin.com/in/jordy-basunga-4a4357359/" target="_blank"
+                            rel="noopener noreferrer" class="social-link" title="LinkedIn"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Jordybasungateba/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://www.instagram.com/jordy_bsg/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="mailto:jordybasunga3@gmail.com" class="social-link" title="Email"><i
+                                class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- === FOOTER === -->
+    <footer class="site-footer">
+        <div class="container-fluid px-5">
+            <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
+
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <div class="d-flex align-items-center font-sans logo mb-3">
+                            <span class="logo-dot"></span> JORDY BASUNGA
+                        </div>
+                        <p class="font-serif footer-tagline">Software Engineer & Architect — Conception de backends
+                            robustes et d'expériences mobiles fluides.</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4 class="font-sans footer-heading">Navigation</h4>
+                        <ul class="font-sans">
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="#">Projets</a></li>
+                            <li><a href="https://www.linkedin.com/in/jordy-basunga-4a4357359/" target="_blank"
+                                    rel="noopener noreferrer">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-social">
+                        <h4 class="font-sans footer-heading">Restons Connectés</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/jordy-basunga-4a4357359/" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/Jordybasungateba/" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub"><img src="assets/skills_SVG/footer/devicon--github-wordmark.svg"
+                                    alt="GitHub" style="max-height: 20px; width: auto;"></a>
+                            <a href="mailto:jordybasunga3@gmail.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Email"><img src="assets/skills_SVG/footer/logos--google-gmail.svg"
+                                    alt="Gmail" style="width: 20px; height: 20px;"></a>
+                            <a href="https://www.instagram.com/jordy_bsg/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram"><img src="assets/skills_SVG/footer/skill-icons--instagram.svg"
+                                    alt="Instagram" style="width: 20px; height: 20px;"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="font-sans">&copy; 2025 Jordy Basunga Teba. Tous droits réservés.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navigation par flèches pour la grille de compétences
+        const grid = document.getElementById('skillsGrid');
+        const btnLeft = document.getElementById('scrollLeft');
+        const btnRight = document.getElementById('scrollRight');
+        const scrollAmount = 320;
+
+        function scrollLeftAction() {
+            grid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        }
+
+        function scrollRightAction() {
+            if (grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 10) {
+                grid.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                grid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        btnLeft.addEventListener('click', scrollLeftAction);
+        btnRight.addEventListener('click', scrollRightAction);
+
+        // Navigation par flèches pour les travaux (Blogs)
+        const blogGrid = document.getElementById('blogGrid');
+        const blogBtnLeft = document.getElementById('blogScrollLeft');
+        const blogBtnRight = document.getElementById('blogScrollRight');
+        const blogScrollAmount = 280;
+
+        function blogScrollLeftAction() {
+            blogGrid.scrollBy({ left: -blogScrollAmount, behavior: 'smooth' });
+        }
+
+        function blogScrollRightAction() {
+            if (blogGrid.scrollLeft + blogGrid.clientWidth >= blogGrid.scrollWidth - 10) {
+                blogGrid.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                blogGrid.scrollBy({ left: blogScrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        blogBtnLeft.addEventListener('click', blogScrollLeftAction);
+        blogBtnRight.addEventListener('click', blogScrollRightAction);
+
+        // Navigation par flèches pour le portfolio
+        const portfolioGrid = document.getElementById('portfolioGrid');
+        const portfolioBtnLeft = document.getElementById('portfolioScrollLeft');
+        const portfolioBtnRight = document.getElementById('portfolioScrollRight');
+        const portfolioScrollAmount = 280;
+
+        function portfolioScrollLeftAction() {
+            portfolioGrid.scrollBy({ left: -portfolioScrollAmount, behavior: 'smooth' });
+        }
+
+        function portfolioScrollRightAction() {
+            if (portfolioGrid.scrollLeft + portfolioGrid.clientWidth >= portfolioGrid.scrollWidth - 10) {
+                portfolioGrid.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                portfolioGrid.scrollBy({ left: portfolioScrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        portfolioBtnLeft.addEventListener('click', portfolioScrollLeftAction);
+        portfolioBtnRight.addEventListener('click', portfolioScrollRightAction);
+
+        // Navigation par flèches pour les certifications
+        const certGrid = document.getElementById('certGrid');
+        const certBtnLeft = document.getElementById('certScrollLeft');
+        const certBtnRight = document.getElementById('certScrollRight');
+        const certScrollAmount = 300;
+
+        function certScrollLeftAction() {
+            certGrid.scrollBy({ left: -certScrollAmount, behavior: 'smooth' });
+        }
+
+        function certScrollRightAction() {
+            if (certGrid.scrollLeft + certGrid.clientWidth >= certGrid.scrollWidth - 10) {
+                certGrid.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                certGrid.scrollBy({ left: certScrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        certBtnLeft.addEventListener('click', certScrollLeftAction);
+        certBtnRight.addEventListener('click', certScrollRightAction);
+
+        // Navigation au clavier pour la grille de compétences
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                scrollLeftAction();
+            } else if (e.key === 'ArrowRight') {
+                scrollRightAction();
+            }
+        });
+
+        // Défilement automatique toutes les 3 secondes
+        let autoScrollInterval;
+
+        function startAutoScroll() {
+            autoScrollInterval = setInterval(scrollRightAction, 3000);
+        }
+
+        function stopAutoScroll() {
+            clearInterval(autoScrollInterval);
+        }
+
+        startAutoScroll();
+
+        // Mettre en pause pendant le survol ou le toucher
+        grid.addEventListener('mouseenter', stopAutoScroll);
+        grid.addEventListener('mouseleave', startAutoScroll);
+        grid.addEventListener('touchstart', stopAutoScroll);
+        grid.addEventListener('touchend', startAutoScroll);
+
+        // === TYPEWRITER ANIMATION ===
+        const typewriterLines = document.querySelectorAll('.typewriter-line');
+        let typewriterStarted = false;
+
+        function typewriterEffect() {
+            if (typewriterStarted) return;
+            typewriterStarted = true;
+
+            let lineIndex = 0;
+
+            function typeLine() {
+                if (lineIndex >= typewriterLines.length) return;
+
+                const span = typewriterLines[lineIndex];
+                const text = span.getAttribute('data-text');
+                span.classList.add('typing');
+                let charIndex = 0;
+
+                function typeChar() {
+                    if (charIndex < text.length) {
+                        span.textContent = text.substring(0, charIndex + 1);
+                        charIndex++;
+                        setTimeout(typeChar, 80);
+                    } else {
+                        span.classList.remove('typing');
+                        lineIndex++;
+                        if (lineIndex < typewriterLines.length) {
+                            setTimeout(typeLine, 200);
+                        } else {
+                            // Relancer l'animation en boucle après 3 secondes
+                            setTimeout(() => {
+                                typewriterLines.forEach(s => {
+                                    s.textContent = '';
+                                });
+                                lineIndex = 0;
+                                typeLine();
+                            }, 3000);
+                        }
+                    }
+                }
+                typeChar();
+            }
+            typeLine();
+        }
+
+        // Déclencher l'animation quand la section est visible
+        const amazingSection = document.querySelector('.amazing-section');
+        if (amazingSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        typewriterEffect();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            observer.observe(amazingSection);
+        }
+
+        // === SCROLL REVEAL ANIMATIONS ===
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+
+</html>
