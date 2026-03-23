@@ -1,3 +1,9 @@
+/* --- SMOOTH SCROLL --- */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
 /* --- VARIABLES COULEURS --- */
 :root {
     --bg-main: #E2E1DD;
@@ -936,6 +942,10 @@ html {
     padding: 4rem 5rem;
 }
 
+.cert-dots {
+    display: none;
+}
+
 /* Grille horizontale scrollable pour les certifications */
 .cert-grid {
     display: flex;
@@ -1024,7 +1034,7 @@ html {
 
     .cert-header,
     .cert-body {
-        padding: 2.5rem;
+        padding: 2.5rem 1.5rem;
     }
 
     .cert-header {
@@ -1041,18 +1051,66 @@ html {
         font-size: 2.5rem;
     }
 
+    .cert-grid {
+        gap: 24px;
+    }
+
     #certGrid {
         scroll-snap-type: x mandatory;
-        padding-left: calc(50% - 120px);
-        padding-right: calc(50% - 120px);
     }
 
     .cert-item {
         scroll-snap-align: center;
         scroll-snap-stop: always;
-        min-width: 240px;
-        max-width: 240px;
-        width: 240px;
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Dot indicators for mobile */
+    .cert-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 2rem;
+    }
+
+    .cert-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #ccc;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .cert-dot.active {
+        background-color: var(--text-dark);
+        width: 24px;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 575px) {
+    .cert-header,
+    .cert-body {
+        padding: 2rem 1.5rem;
+    }
+
+    .certification-section {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .cert-item {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
     }
 }
 

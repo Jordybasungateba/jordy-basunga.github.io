@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Architecte Logiciel & Ingénieur</title>
+    <title>Jordy Basunga</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -32,17 +32,19 @@
         </button>
         <div class="collapse navbar-collapse mt-2" id="mobileNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">À propos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Projets</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/jordy-basunga-4a4357359/"
-                        target="_blank" rel="noopener noreferrer">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#travaux">Travaux</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- === CONTENU PRINCIPAL === -->
-    <div class="container-fluid h-100 main-content px-5">
+    <div id="accueil" class="container-fluid h-100 main-content px-5">
         <div class="row h-100">
 
             <!-- COLONNE GAUCHE : Texte + CTA -->
@@ -90,12 +92,14 @@
                         MENU <i class="bi bi-list fs-5 ms-1"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
-                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#">Accueil</a></li>
-                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#">À propos</a></li>
-                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#">Projets</a></li>
+                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#accueil">Accueil</a></li>
+                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#apropos">À propos</a></li>
+                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#skills">Skills</a></li>
+                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#travaux">Travaux</a></li>
+                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#portfolio">Portfolio</a></li>
                         <li><a class="dropdown-item font-sans text-uppercase py-2"
-                                href="https://www.linkedin.com/in/jordy-basunga-4a4357359/" target="_blank"
-                                rel="noopener noreferrer">Contact</a></li>
+                                href="#certifications">Certifications</a></li>
+                        <li><a class="dropdown-item font-sans text-uppercase py-2" href="#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -129,7 +133,7 @@
     </div>
 
     <!-- === SECTION SKILLS === -->
-    <div class="container-fluid px-5 skills-section">
+    <div id="skills" class="container-fluid px-5 skills-section">
         <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
 
             <div class="d-flex justify-content-between align-items-center skills-header reveal fade-up">
@@ -262,7 +266,7 @@
     </div>
 
     <!-- === SECTION ABOUT === -->
-    <section class="container-fluid px-5 about-section">
+    <section id="apropos" class="container-fluid px-5 about-section">
         <div class="row gx-lg-5 ps-lg-5 push-center-left pe-lg-5 push-center-right">
             <div class="col-lg-5 mb-4 mb-lg-0 reveal fade-left">
                 <h2 class="font-sans about-title">
@@ -297,7 +301,7 @@
     </section>
 
     <!-- === SECTION NEWS & BLOGS === -->
-    <section class="container-fluid px-5 news-section">
+    <section id="travaux" class="container-fluid px-5 news-section">
         <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
 
             <div class="d-flex justify-content-between align-items-end mb-5 news-header-wrap reveal fade-up">
@@ -433,7 +437,7 @@
     </section>
 
     <!-- === SECTION CERTIFICATION === -->
-    <section class="container-fluid px-5 certification-section">
+    <section id="certifications" class="container-fluid px-5 certification-section">
         <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
             <div class="cert-card reveal fade-in">
 
@@ -532,6 +536,13 @@
                         </div>
 
                     </div>
+                    <div class="cert-dots" id="certDots">
+                        <button class="cert-dot active" data-index="0"></button>
+                        <button class="cert-dot" data-index="1"></button>
+                        <button class="cert-dot" data-index="2"></button>
+                        <button class="cert-dot" data-index="3"></button>
+                        <button class="cert-dot" data-index="4"></button>
+                    </div>
                 </div>
 
             </div>
@@ -539,7 +550,7 @@
     </section>
 
     <!-- === SECTION PORTFOLIO === -->
-    <section class="container-fluid px-5 portfolio-section">
+    <section id="portfolio" class="container-fluid px-5 portfolio-section">
         <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
 
             <div class="d-flex justify-content-between align-items-end mb-5 news-header-wrap reveal fade-up">
@@ -671,7 +682,7 @@
     </section>
 
     <!-- === SECTION AMAZING (Appel à l'action) === -->
-    <section class="container-fluid px-5 amazing-section">
+    <section id="contact" class="container-fluid px-5 amazing-section">
         <div class="ps-lg-5 push-center-left pe-lg-5 push-center-right">
             <div class="row g-5 align-items-center">
 
@@ -708,8 +719,7 @@
                             class="social-link" title="GitHub"><i class="bi bi-github"></i></a>
                         <a href="https://www.instagram.com/jordy_bsg/" target="_blank" rel="noopener noreferrer"
                             class="social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="mailto:jordybasunga3@gmail.com" class="social-link" title="Email"><i
-                                class="bi bi-envelope-fill"></i></a>
+                        <a href="mailto:jordybasunga3@gmail.com" class="social-link" title="Gmail"><img src="assets/skills_SVG/footer/logos--google-gmail.svg" alt="Gmail" style="width: 1.4rem; height: 1.4rem; object-fit: contain;"></a>
                     </div>
                 </div>
 
@@ -734,11 +744,13 @@
                     <div class="footer-links">
                         <h4 class="font-sans footer-heading">Navigation</h4>
                         <ul class="font-sans">
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">À propos</a></li>
-                            <li><a href="#">Projets</a></li>
-                            <li><a href="https://www.linkedin.com/in/jordy-basunga-4a4357359/" target="_blank"
-                                    rel="noopener noreferrer">Contact</a></li>
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#apropos">À propos</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#travaux">Travaux</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#certifications">Certifications</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
 
@@ -770,6 +782,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // Fermer le menu mobile automatiquement au clic sur un lien d'ancrage
+        document.querySelectorAll('#mobileNav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navCollapse = document.getElementById('mobileNav');
+                const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+                if (bsCollapse) bsCollapse.hide();
+            });
+        });
+
         // Navigation par flèches pour la grille de compétences
         const grid = document.getElementById('skillsGrid');
         const btnLeft = document.getElementById('scrollLeft');
@@ -833,26 +854,92 @@
         portfolioBtnLeft.addEventListener('click', portfolioScrollLeftAction);
         portfolioBtnRight.addEventListener('click', portfolioScrollRightAction);
 
-        // Navigation par flèches pour les certifications
+        // Navigation par flèches pour les certifications (carousel carte par carte sur mobile)
         const certGrid = document.getElementById('certGrid');
         const certBtnLeft = document.getElementById('certScrollLeft');
         const certBtnRight = document.getElementById('certScrollRight');
-        const certScrollAmount = 300;
+        const certItems = certGrid.querySelectorAll('.cert-item');
+        const certDots = document.querySelectorAll('.cert-dot');
+        let certCurrentIndex = 0;
+
+        function isMobileView() {
+            return window.innerWidth <= 991;
+        }
+
+        function certGoToIndex(index) {
+            if (index < 0) index = certItems.length - 1;
+            if (index >= certItems.length) index = 0;
+            certCurrentIndex = index;
+
+            if (isMobileView()) {
+                certItems[index].scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                    inline: 'center'
+                });
+            }
+
+            // Update dots
+            certDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === certCurrentIndex);
+            });
+        }
 
         function certScrollLeftAction() {
-            certGrid.scrollBy({ left: -certScrollAmount, behavior: 'smooth' });
+            if (isMobileView()) {
+                certGoToIndex(certCurrentIndex - 1);
+            } else {
+                certGrid.scrollBy({ left: -300, behavior: 'smooth' });
+            }
         }
 
         function certScrollRightAction() {
-            if (certGrid.scrollLeft + certGrid.clientWidth >= certGrid.scrollWidth - 10) {
-                certGrid.scrollTo({ left: 0, behavior: 'smooth' });
+            if (isMobileView()) {
+                certGoToIndex(certCurrentIndex + 1);
             } else {
-                certGrid.scrollBy({ left: certScrollAmount, behavior: 'smooth' });
+                if (certGrid.scrollLeft + certGrid.clientWidth >= certGrid.scrollWidth - 10) {
+                    certGrid.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    certGrid.scrollBy({ left: 300, behavior: 'smooth' });
+                }
             }
         }
 
         certBtnLeft.addEventListener('click', certScrollLeftAction);
         certBtnRight.addEventListener('click', certScrollRightAction);
+
+        // Dot click navigation
+        certDots.forEach((dot) => {
+            dot.addEventListener('click', () => {
+                certGoToIndex(parseInt(dot.dataset.index));
+            });
+        });
+
+        // Sync dots on manual scroll/swipe
+        let certScrollTimeout;
+        certGrid.addEventListener('scroll', () => {
+            if (!isMobileView()) return;
+            clearTimeout(certScrollTimeout);
+            certScrollTimeout = setTimeout(() => {
+                const gridRect = certGrid.getBoundingClientRect();
+                const gridCenter = gridRect.left + gridRect.width / 2;
+                let closest = 0;
+                let closestDist = Infinity;
+                certItems.forEach((item, i) => {
+                    const itemRect = item.getBoundingClientRect();
+                    const itemCenter = itemRect.left + itemRect.width / 2;
+                    const dist = Math.abs(itemCenter - gridCenter);
+                    if (dist < closestDist) {
+                        closestDist = dist;
+                        closest = i;
+                    }
+                });
+                certCurrentIndex = closest;
+                certDots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === certCurrentIndex);
+                });
+            }, 100);
+        });
 
         // Navigation au clavier pour la grille de compétences
         document.addEventListener('keydown', (e) => {
